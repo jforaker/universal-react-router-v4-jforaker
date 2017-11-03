@@ -1,0 +1,11 @@
+{
+  "presets": [
+    [
+      "latest",
+      { "modules": false }
+    ],
+    "react",
+    "stage-0",
+    ["env"]
+  ]
+}
