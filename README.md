@@ -11,7 +11,7 @@ elements that the backend is using (hence “universal”).
 
 Each subpage contains custom meta tags via Helmet that can be parsed server-side
 
-## [Demo](https://universal-react-router-v4-jforaker-tkeuwckyox.now.sh)
+## [Demo](https://universal-react-router-v4-jforaker-ncexxxkvjk.now.sh/repos)
 
 ## How to Run
 
