@@ -5,7 +5,7 @@ import { combineReducers } from 'redux';
 export const FETCH_REPOS = 'app/FETCH_REPOS';
 
 export const fetchRepos = () => async (dispatch, getState, api) => {
-  const res = await axios.get('https://api.github.com/users/cnnlabs/repos'); //https://api.cnnmoneystream.com/stories/87fbb586-13cb-4f1b-b05d-bb18c99551cf
+  const res = await axios.get('https://api.github.com/users/cnnlabs/repos');
   console.log('res client', res);
   return dispatch({
     type: FETCH_REPOS,
