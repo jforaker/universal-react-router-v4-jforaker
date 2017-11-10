@@ -15,7 +15,7 @@ const Header = ({ auth }) => {
             <Link to="/repos">Repos</Link>
           </li>
           <li>
-            <Link to="/admins">auth</Link>
+            <Link to="/foobar">not found</Link>
           </li>
         </ul>
       </div>

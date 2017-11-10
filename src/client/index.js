@@ -13,7 +13,7 @@ import repos from '../shared/ducks'
 
 const store = createStore(
   repos,
-  window.INITIAL_STATE,
+  window.__INITIAL_STATE__,
   applyMiddleware(thunk)
 );
 

@@ -16,7 +16,7 @@ app.get('*', (req, res) => {
 
   const promises = matchRoutes(Routes, req.path)
     .map(({ route }) => {
-      return route.loadData ? route.loadData(store) : null;
+      return route.loadData ? route.loadData(store) : Promise.resolve(null);
     })
     .map(promise => {
       if (promise) {
@@ -27,9 +27,6 @@ app.get('*', (req, res) => {
     });
 
   Promise.all(promises).then((data) => {
-    if (data.payload) {
-      console.log('data---- ------- ----------- ', data.payload.data)
-    }
     const context = {};
     const content = renderer(req, store, context);
 
